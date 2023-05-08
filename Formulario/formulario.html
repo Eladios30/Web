@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Donaciones</header>
+      <form action="PHP/Donacion.php" method="POST" class="form">
+        <div class="input-box">
+          <label>Nombre Completo</label>
+          <input type="text" placeholder="Enter full name" name="nombre" required />
+        </div>
+        <div class="input-box">
+          <label>Correo Electronico</label>
+          <input type="text" placeholder="Enter email address" name="correo" required />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Numero de Telefono</label>
+            <input type="number" placeholder="Enter phone number" name="telefono" required />
+          </div>
+          <div class="input-box">
+            <label>Fecha de Entrega</label>
+            <input type="date" placeholder="Enter delivery date" name="fecha" required />
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Plataforma y Red social</label>
+          <input type="text" placeholder="Enter plataform" name="plataforma" required />
+          <input type="text" placeholder="Enter social media" name="red" required />
+          <div class="column">
+            <div class="select-box">
+              <select name="nacionalidad">
+                <option hidden>Nacionalidad</option>
+                <option value="Americana">Americana</option>
+                <option value="Japonesa">Japonesa</option>
+                <option value="Mexicana">Mexicana</option>
+                <option value="Española">Española</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your comment" name="comentario" required />
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

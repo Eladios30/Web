@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+ }
+
+body{
+    background-color: #f5f5f5;
+}
+
+header{
+    background-image: url(imagenes/hero.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #0EAEF3;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-text {
+    margin-top: -40px;
+    text-align: center;
+    width: 700px;
+    display: flex;
+}
+
+.content {
+    padding: 150px 150px 0px 0px;
+}
+
+.content h1 {
+    color: #ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+.content p {
+    margin-top: 25px;
+    color: #AAB1FF;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 40px;
+    width: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: rgba(170, 177, 255, 0.3);
+    border: 1px solid #AAB1FF;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #5850BC;
+    border-radius: 25px;
+}
+
+
+.btn-1:hover {
+    background-color: #AAB1FF;
+}
+
+
+.porfolios {
+    padding: 80px 0px;
+    text-align: center;
+    color: #0E0E0E;
+}
+
+.porfolios h2 {
+    font-size: 55px;
+}
+
+.porfolio {
+    display: flex;
+    align-items: center;
+}
+
+.porfolio img{
+    width: 350px;
+}
+
+.porfolio-1{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.porfolio-1 h3 p{
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.porfolio-1 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.porfolio-2 {
+    text-align: left;
+    margin-right: 100px;
+}
+
+.porfolio-2 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-2 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+footer {
+    padding: 200px 0px 30px 0px;
+    background-image: url(imagenes/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.info-content {
+    display: flex;
+}
+
+hr {
+    margin: 45px 0px;
+    border: 0.5px solid #AAB1FF;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #40044d;
+}
+
+.enlaces h3 {
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.enlace li a:hover {
+    color: #0EAEF3;
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #5850BC;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    header {
+        height: 0vh;
+        padding: 400px 0px;
+        background-position: center center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    .content h1 {
+        margin-top: 100px;
+        font-size: 45px;
+    }
+
+    .content p {
+        margin-top: 0px;
+    }
+
+    .header-content img {
+        width: 150px;
+    }
+
+    .porfolios {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .porfolios h2 {
+        margin-bottom: 15px;
+    }
+
+    .porfolio {
+        flex-direction: column;
+    }
+
+    .porfolio img {
+        display: none;
+    }
+
+    .porfolio-1 {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .porfolio-2 {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    footer {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-txt {
+        margin: 0px;
+    }
+
+    hr {
+        margin: 25px 0px;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlace {
+        flex-direction: column;
+    }
+
+    .ft-a{
+        margin: 0px 0px 25px 0px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+}
