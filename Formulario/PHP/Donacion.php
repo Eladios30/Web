@@ -13,17 +13,17 @@
         $host = "localhost";
         $usuario = "root";
         $contra = "";
-        $base = "estudiante";
+        $base = "credu";
 
         $conex = new mysqli($host, $usuario, $contra, $base);
 
         if (mysqli_connect_error()) {
             die("Error en la conexion('mysqli_connect_errno() .') mysqli_connect_error()");
         } else {
-            $select = "SELECT numero_d from usuario where numero_d = ? limit 1 ";
+            $select = "SELECT numero_w from donaciones_web where numero_w = ? limit 1";
             #Para que no me hackeen
-            $insert = "INSERT into usuario (nombre_d, correo_d, numero_d, 
-                fecha_d, plataforma_d, red_d, nacionalidad_d, comentario_d) 
+            $insert = "INSERT into donaciones_web (nombre_w, correo_w, numero_w, 
+                fecha_w, plataforma_w, red_w, nacionalidad_w, comentario_w) 
             values (?, ?, ?, ?, ?, ?, ?, ?)";
 
             $identificador = $conex -> prepare($select);
