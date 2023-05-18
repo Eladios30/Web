@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Registration Form in HTML CSS</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,26 +13,26 @@
       <form action="PHP/Donacion.php" method="POST" class="form">
         <div class="input-box">
           <label>Nombre Completo</label>
-          <input type="text" placeholder="Enter full name" name="nombre" required />
+          <input type="text" id="nombre" placeholder="Enter full name" name="nombre" required />
         </div>
         <div class="input-box">
           <label>Correo Electronico</label>
-          <input type="text" placeholder="Enter email address" name="correo" required />
+          <input type="text" id="correo" placeholder="Enter email address" name="correo" required />
         </div>
         <div class="column">
           <div class="input-box">
             <label>Numero de Telefono</label>
-            <input type="number" placeholder="Enter phone number" name="telefono" required />
+            <input type="number" id="telefono" placeholder="Enter phone number" name="telefono" required />
           </div>
           <div class="input-box">
             <label>Fecha de Entrega</label>
-            <input type="date" placeholder="Enter delivery date" name="fecha" required />
+            <input type="date" id="fecha" placeholder="Enter delivery date" name="fecha" required />
           </div>
         </div>
         <div class="input-box address">
           <label>Plataforma y Red social</label>
-          <input type="text" placeholder="Enter plataform" name="plataforma" required />
-          <input type="text" placeholder="Enter social media" name="red" required />
+          <input type="text" id="plataforma" placeholder="Enter plataform" name="plataforma" required />
+          <input type="text" id="red_social" placeholder="Enter social media" name="red" required />
           <div class="column">
             <div class="select-box">
               <select name="nacionalidad">
@@ -43,7 +43,7 @@
                 <option value="Española">Española</option>
               </select>
             </div>
-            <input type="text" placeholder="Enter your comment" name="comentario" required />
+            <input type="text" id="comentarios" placeholder="Enter your comment" name="comentario" required />
           </div>
         </div>
         <button>Submit</button>
