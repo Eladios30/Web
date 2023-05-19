@@ -1,9 +1,4 @@
 
-    var nombre = document.getElementById("nombre").value;
-    var correo = document.getElementById("correo").value;
-    var numero = document.getElementById("telefono").value;
-    var fecha = document.getElementById("fecha").value;
-
     // Your web app's Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyCqNvZMTLyG4U2UmpVfvP3OChtJVgxM0mU",
@@ -23,10 +18,8 @@
     var db = firebase.firestore();
 
     const guardarDatos = (user) => {
-    db.collection("users").add({
-        first: "Ada",
-        last: "Lovelace",
-        born: 1815
+    db.collection("usuarios").add({
+        user,
     })
     .then((docRef) => {
       mensajeExitoso();
@@ -53,4 +46,17 @@
     })
   }
 
-  
+  $("#guardar").on("click", () =>{
+    let nombre = $("$nombre").val();
+    let correo = $("$correo").val();
+    let numero = $("$numero").val();
+    let fecha =$("$fecha").val();
+
+    const user = {
+      nombre,
+      correo,
+      numero,
+      fecha
+    }
+    guardarDatos(user);
+  })
