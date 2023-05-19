@@ -1,37 +1,56 @@
 
-function enviarFormulari(){
     var nombre = document.getElementById("nombre").value;
     var correo = document.getElementById("correo").value;
     var numero = document.getElementById("telefono").value;
     var fecha = document.getElementById("fecha").value;
 
-    var formData = new FormData();
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCqNvZMTLyG4U2UmpVfvP3OChtJVgxM0mU",
+      authDomain: "educarte-3bc4b.firebaseapp.com",
+      projectId: "educarte-3bc4b",
+      storageBucket: "educarte-3bc4b.appspot.com",
+      messagingSenderId: "175450238774",
+      appId: "1:175450238774:web:a5a261932cf3d07ade8d97"
 
-    formData.append("nombre", nombre);
-    formData.append("correo", correo);
-    formData.append("telefono", numero);    
-    formData.append("fecha", fecha);
-
-    var solicitud = new XMLHttpRequest();
-    // Crear una solicitud HTTP (POST) hacia el servidor
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://credu.000webhostapp.com/", true);
-
-    // Configurar el encabezado de la solicitud (si es necesario)
-    // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-    // Manejar la respuesta del servidor (opcional)
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        // Éxito: la solicitud fue exitosa
-        console.log("Lo logramos alv");
-        console.log(xhr.responseText);
-      } else {
-        // Error: la solicitud falló
-        console.error(xhr.statusText);
-      }
+      // Initialize Cloud Firestore and get a reference to the service
     };
 
-    // Enviar la solicitud con los datos del formulario
-    xhr.send(formData);
-}
+        // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Cloud Firestore and get a reference to the service
+    var db = firebase.firestore();
+
+    const guardarDatos = (user) => {
+    db.collection("users").add({
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815
+    })
+    .then((docRef) => {
+      mensajeExitoso();
+    })
+    .catch((error) => {
+      mensajeError();
+    });
+  }
+
+  const mensajeExitoso = () => {
+    Swal.fire(
+      'Good job!',
+      'You clicked the button!',
+      'success'
+    )
+  }
+
+  const mensajeError = () => {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+      footer: '<a href="">Why do I have this issue?</a>'
+    })
+  }
+
+  
