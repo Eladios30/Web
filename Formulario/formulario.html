@@ -7,13 +7,16 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   </head>
   <body>
     <section class="container">
+
       <header>Donaciones</header>
+
       <form class="form">
+
         <div class="input-box">
           <label>Nombre Completo</label>
           <input type="text" id="nombre" placeholder="Enter full name" name="nombre" required />
@@ -38,6 +41,7 @@
           <input type="text" id="red_social" placeholder="Enter social media" name="red" required />
           <div class="column">
             <div class="select-box">
+
               <select id="nacional" name="nacionalidad">
                 <option hidden>Nacionalidad</option>
                 <option value="Americana">Americana</option>
@@ -45,16 +49,22 @@
                 <option value="Mexicana">Mexicana</option>
                 <option value="Española">Española</option>
               </select>
+
             </div>
             <input type="text" id="comentarios" placeholder="Enter your comment" name="comentario" required />
           </div>
         </div>
         
-      <a href="#" onclick="guardar()">Enviar</a>
+<!-- <a href="#" onclick="guardar()">Enviar</a>-->
+<button id="send">Enviar</button>
+      
       </form>
+
     </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="Configuracion.js"></script>
   <script src="obtener.js"></script>
+
   </body>
 </html>

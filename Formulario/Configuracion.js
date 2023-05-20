@@ -12,4 +12,4 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //Inicializando Cloud Firestore y obteniendo una referencia del servicio
-var db = firebase.firestore();
+//var db = firebase.firestore();
