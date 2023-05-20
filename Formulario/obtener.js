@@ -38,6 +38,13 @@ function guardar() {
 }*/
 //Metiendo los datos a una tabla NO SQL
 var firebaseRef = firebase.database().ref("donadores/1");
+const db = getDatabase();
+
+function insertando(){
+  set(ref(db, "Donadores/"+ ))
+}
+
+
 //Seleccionando el id y agregando evento
 document.querySelector("#send").addEventListener("click", () => {
   //Declarando variables
