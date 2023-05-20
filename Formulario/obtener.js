@@ -37,7 +37,7 @@ function guardar() {
     });
 }*/
 //Metiendo los datos a una tabla NO SQL
-var firebaseRef = firebase.database().ref("donadores");
+var firebaseRef = firebase.database().ref("donadores/1");
 //Seleccionando el id y agregando evento
 document.querySelector("#send").addEventListener("click", () => {
   //Declarando variables
