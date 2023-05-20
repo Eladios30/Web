@@ -1,4 +1,5 @@
 //Obteniendo datos de la configuracion de Firebase
+
 const firebaseConfig = {
     apiKey: "AIzaSyCqNvZMTLyG4U2UmpVfvP3OChtJVgxM0mU",
     authDomain: "educarte-3bc4b.firebaseapp.com",
@@ -12,4 +13,4 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //Inicializando Cloud Firestore y obteniendo una referencia del servicio
-//var db = firebase.firestore();
+var db = firebase.firestore();
