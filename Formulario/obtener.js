@@ -16,6 +16,7 @@ const mensajeError = () => {
     footer: '<a href="formulario.html">¿Por qué tengo este problema?</a>'
   })
 }
+//Contador para el ingreso de cada formulario
 var i = 0;
 function guardar() {
 
