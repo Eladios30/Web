@@ -17,7 +17,7 @@ const mensajeError = () => {
   })
 }
 //Contador para el ingreso de cada formulario
-var i = 0;
+var i = 1;
 function guardar() {
 
   //Declaramos variables
@@ -30,6 +30,9 @@ function guardar() {
   var nacionalidad = document.getElementById("nacionalidad").value
   var comentarios = document.getElementById("comentarios").value
 
+  db.ref("Counter/node").set({
+    contador : i
+  })
   //Agregamos directorio para los nodos
   db.ref("Information/" + i++).set({
     nombre: nombre,
