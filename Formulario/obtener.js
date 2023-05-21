@@ -2,7 +2,7 @@
 const mensajeExitoso = () => {
   Swal.fire(
     'Buen trabajo!',
-    'You clicked the button!',
+    'Presiona el boton!',
     'Realizado'
   )
 }
@@ -12,47 +12,32 @@ const mensajeError = () => {
   Swal.fire({
     icon: 'Error!',
     title: 'Oops...',
-    text: 'Something went wrong!',
-    footer: '<a href="">Why do I have this issue?</a>'
+    text: '¡Algo salió mal!',
+    footer: '<a href="formulario.html">¿Por qué tengo este problema?</a>'
   })
 }
+var i = 0;
+function guardar() {
 
-function guardar(){
+  //Declaramos variables
+  var nombre = document.getElementById("nombre").value
+  var correo = document.getElementById("correo").value
+  var numero = document.getElementById("telefono").value
+  var fecha = document.getElementById("fecha").value
+  var plataforma = document.getElementById("correo").value
+  var red = document.getElementById("red").value
+  var nacionalidad = document.getElementById("nacionalidad").value
+  var comentarios = document.getElementById("comentarios").value
 
-    var nombre = document.getElementById("nombre").value
-    var correo = document.getElementById("correo").value
-    var numero = document.getElementById("telefono").value
-    var fecha = document.getElementById("fecha").value
-    var plataforma = document.getElementById("correo").value
-    var red = document.getElementById("red").value
-    var nacionalidad = document.getElementById("nacionalidad").value
-    var comentarios = document.getElementById("comentarios").value
-
-    db.ref("Information/" + nombre).set({
-      nombre : nombre,
-      correo : correo,
-      numero : numero,
-      fecha : fecha,
-      plataforma : plataforma,
-      red : red,
-      nacionalidad : nacionalidad,
-      comentarios : comentarios
-    })
-/*
-  db.collection("usuarios").add({
-    nombre : document.getElementById("nombre").value,
-    correo : document.getElementById("correo").value,
-    numero : document.getElementById("telefono").value,
-    fecha : document.getElementById("fecha").value,
-    plataforma : document.getElementById("plataforma").value,
-    red : document.getElementById("red").value,
-    nacionalidad : document.getElementById("nacionalidad").value,
-    comentarios : document.getElementById("comentarios").value
-})*/
-.then((docRef) => {
-    mensajeExitoso();
-})
-.catch((error) => {
-    mensajeError();
-});
+  //Agregamos directorio para los nodos
+  db.ref("Information/" + i++).set({
+    nombre: nombre,
+    correo: correo,
+    numero: numero,
+    fecha: fecha,
+    plataforma: plataforma,
+    red: red,
+    nacionalidad: nacionalidad,
+    comentarios: comentarios
+  })
 }
