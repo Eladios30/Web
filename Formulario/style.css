@@ -23,6 +23,20 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+.btn-1 {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(96, 147, 241, 0.3);
+    border: 1px solid #AAB1FF;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #23036e;
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background-color: #AAB1FF;
+}
 .container header {
   font-size: 1.5rem;
   color: #333;
