@@ -1,25 +1,7 @@
-//Mensajes de exito
-const mensajeExitoso = () => {
-  Swal.fire(
-    'Buen trabajo!',
-    'Presiona el boton!',
-    'Realizado'
-  )
-}
 
-//Mensaje de error
-const mensajeError = () => {
-  Swal.fire({
-    icon: 'Error!',
-    title: 'Oops...',
-    text: '¡Algo salió mal!',
-    footer: '<a href="formulario.html">¿Por qué tengo este problema?</a>'
-  })
-}
 //Contador para el ingreso de cada formulario
 var i = 1;
 function guardar() {
-
   //Declaramos variables
   var nombre = document.getElementById("nombre").value
   var correo = document.getElementById("correo").value
@@ -49,8 +31,26 @@ function guardar() {
       nacionalidad: nacionalidad,
       comentarios: comentarios
     })
+
+	//Mensaje de exito
+	Swal.fire({
+		title: "¡Confirmación exitosa!",
+		text: "Gracias por tu donación.",
+		icon: "success",
+		confirmButtonText: "Aceptar"
+	  }).then((result) => {
+		if (result.isConfirmed) {
+		  window.location.href = "https://credu.000webhostapp.com/";
+		}
+	  });
   } else {
-    alert("Vueva a escribir un correo valido");
+
+	//Mensaje de error
+    Swal.fire({
+		icon: 'Error!',
+		title: 'Oops...',
+		text: '¡Algo salió mal!'
+	  })
   }
 }
 
