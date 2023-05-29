@@ -4,16 +4,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
     text-decoration: none;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
- }
-
-body{
-    background-color: #f5f5f5;
 }
-
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
 header{
     background-image: url(imagenes/hero.jpg);
     background-position: center bottom;
@@ -23,17 +31,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: #ffffff;
 }
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
 .menu {
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0;
     right: 0;
     display: flex;
@@ -41,140 +43,111 @@ header{
     justify-content: space-between;
     z-index: 1000;
 }
-
 .menu .logo {
     font-weight: bold;
     font-size: 25px;
     color: #ffffff;
+    align-items: center;
 }
-
-.menu .navbar ul {
-    list-style: none;
-}
-
-.menu .navbar ul li {
+.menu .navbar ul li{
     position: relative;
     float: left;
 }
-
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: #ffffff;
     display: block;
+   
 }
-
+.menu .navbar ul {
+    list-style: none;
+}
 .menu .navbar ul li a:hover {
     color: #0EAEF3;
 }
-
-#menu {
+.social-1 img{
+    width: 30px;
+    margin: 10px;
+}
+#menu{
     display: none;
 }
-
-.menu-icono {
+.menu-icono{
     width: 25px;
 }
-
-.menu label {
+.menu label{
     cursor: pointer;
     display: none;
 }
-
-.header-text {
-    margin-top: -40px;
-    text-align: center;
-    width: 700px;
+.hearder-content{
+    padding: 100px 0px;
     display: flex;
+    align-items: center;
 }
+.header-txt p{
+    width: 50%;
+    padding-right: 100px;
+    margin-left: 100px;
+    display: flex;
 
-.content {
-    padding: 150px 150px 0px 0px;
 }
-
-.content h1 {
-    color: #ffffff;
-    font-size: 55px;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 55px;
-}
-
-.content p {
+.header-txt h1{
+    font-size: 140px;
+    line-height: 150px;
+    color: black;
     margin-top: 25px;
-    color: #AAB1FF;
-    text-transform: uppercase;
-    font-size: 35px;
-    line-height: 40px;
-    width: 20px;
 }
-
-.btn-1 {
+p{
+    font-size: 18px;
+    color: #424242;
+    
+}
+.btn-2 {
     display: inline-block;
     background-color: rgba(170, 177, 255, 0.3);
     border: 1px solid #AAB1FF;
     margin: 35px 10px 0px 0px;
-    padding: 15px 25px;
+    padding: 13px 30px;
     color: #5850BC;
     border-radius: 25px;
+    font-size: 18px;
 }
-
-
-.btn-1:hover {
+.btn-2:hover {
     background-color: #AAB1FF;
 }
-
-
-.porfolios {
-    padding: 80px 0px;
+.header-img{
+    width: 100%;
     text-align: center;
-    color: #0E0E0E;
 }
 
-.porfolios h2 {
-    font-size: 55px;
+.about{
+    padding: 100px 0px;
+    background-color: #ffffff
 }
 
-.porfolio {
-    display: flex;
-    align-items: center;
+.about-img{
+    width: 50%;
+    text-align: center;
 }
-
-.porfolio img{
+.about-img img{
     width: 350px;
 }
-
-.porfolio-1{
-    text-align: left;
-    margin-left: 100px;
+.imagen-img{
+    width: 100%;
+    text-align: center;
 }
-
-.porfolio-1 h3 p{
-    font-size: 35px;
-    margin-bottom: 15px;
+.imagenes-img{
+    width: 100%;
     text-align: center;
 }
 
-.porfolio-1 p {
-    font-size: 18px;
-    color: #525254;
+h2{
+    font-size: 80px;
+    line-height: 90px;
+    color: #3f3f3f;
     margin-bottom: 25px;
-}
-
-.porfolio-2 {
-    text-align: left;
-    margin-right: 100px;
-}
-
-.porfolio-2 h3 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.porfolio-2 p {
-    font-size: 18px;
-    color: #525254;
-    margin-bottom: 25px;
+    text-align: center;
 }
 
 footer {
@@ -185,40 +158,37 @@ footer {
     background-size: cover;
     height: 40vh;
 }
-
-.info-content {
+.contact{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
     display: flex;
 }
-
-hr {
-    margin: 45px 0px;
-    border: 0.5px solid #AAB1FF;
+.campo{
+    padding: 17px 35px;
+    background-color: #0EAEF3;
+    border-radius: 25px;
+    margin-right: 15px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    color: #e8e8e8;
 }
-
-.enlaces {
-    display: flex;
-    justify-content: space-between;
-    color: #40044d;
+.campo::placeholder{
+    color: black;
 }
-
-.enlaces h3 {
-    font-size: 25px;
+.form-content{
+    padding: 100px 0 70px 0;
+    text-align: center;
 }
+.form-content h2{
+    font-size: 50px;
+    color: #3f3f3f;
+    margin-bottom: 25px;
 
-.enlace {
-    display: flex;
 }
-
-.enlace li a {
-    display: block;
-    margin: 20px;
-    color: #ffffff;
-}
-
-.enlace li a:hover {
-    color: #0EAEF3;
-}
-
 @media (max-width:991px) {
     .menu {
         padding: 20px;
@@ -246,16 +216,29 @@ hr {
     }
 
     header {
-        height: 0vh;
-        padding: 400px 0px;
-        background-position: center center;
+        min-height: 0vh;
     }
 
     .header-content {
         flex-direction: column;
+        padding: 130px 30px 80px 30px;
+    }
+    .header-txt{
+        width: 100%;
+        padding-right: 0;
         text-align: center;
-        align-items: center;
-        padding: 0px 30px;
+        margin-bottom: 15px;
+    }
+
+    .imagen-img{
+        width: 50%;
+        text-align: center;
+        
+    }
+    .imagenes-img{
+        width: 50%;
+        text-align: center;
+        
     }
 
     .content {
@@ -272,65 +255,32 @@ hr {
     }
 
     .header-content img {
-        width: 150px;
+        width: 50%;
     }
-
-    .porfolios {
-        padding: 0px 30px 30px 30px;
-    }
-
-    .porfolios h2 {
-        margin-bottom: 15px;
-    }
-
-    .porfolio {
+    .header-img img{
+        width: 100%;
+        text-align: center;
         flex-direction: column;
     }
-
-    .porfolio img {
-        display: none;
-    }
-
-    .porfolio-1 {
-        text-align: center;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .porfolio-2 {
-        text-align: center;
-        margin: 0px 0px 25px 0px;
-    }
+   
 
     footer {
         padding: 0px 30px 30px 30px;
     }
 
-    .info-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-txt {
-        margin: 0px;
-    }
-
-    hr {
-        margin: 25px 0px;
-    }
-
-    .enlaces {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .enlace {
-        flex-direction: column;
-    }
-
+    
     .ft-a{
         margin: 0px 0px 25px 0px;
         text-align: center;
         color: #ffffff;
     }
-
+    .form-content{
+        padding: 30px;
+    }
+    form{
+        flex-direction: column;
+    }
+    .campo{
+        margin-bottom: 20px;
+    }
 }
