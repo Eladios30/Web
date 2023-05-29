@@ -31,18 +31,7 @@ function guardar() {
       nacionalidad: nacionalidad,
       comentarios: comentarios
     })
-
-	//Mensaje de exito
-	Swal.fire({
-		title: "¡Confirmación exitosa!",
-		text: "Gracias por tu donación.",
-		icon: "success",
-		confirmButtonText: "Aceptar"
-	  }).then((result) => {
-		if (result.isConfirmed) {
-		  window.location.href = "https://credu.000webhostapp.com/";
-		}
-	  });
+	
   } else {
 
 	//Mensaje de error
