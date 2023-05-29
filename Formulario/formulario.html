@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Registration Form in HTML CSS</title>
+    <title>Registration Form</title>
     <!---Custom CSS File--->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,32 +16,32 @@
       <form action="#" class="form">
         <div class="input-box">
           <label>Full name</label>
-          <input type="text" placeholder="Enter full name" required />
+          <input type="text" id="nombre" placeholder="Enter full name" required />
         </div>
 
         <div class="input-box">
           <label>Email address</label>
-          <input type="text" placeholder="Enter email address"/>
+          <input type="text" id="correo" placeholder="Enter email address"/>
         </div>
 
         <div class="column">
           <div class="input-box">
             <label>Phone number</label>
-            <input type="number" placeholder="Enter phone number" required/>
+            <input type="number" id="telefono" placeholder="Enter phone number" required/>
           </div>
           <div class="input-box">
             <label>Delivery date</label>
-            <input type="date" placeholder="Enter delivery date" required />
+            <input type="date" id="fecha" placeholder="Enter delivery date" required />
           </div>
         </div>
         <div class="input-box address">
           <label>Social media</label>
-          <input type="text" placeholder="Enter plataform" />
-          <input type="text" placeholder="Enter social media" />
+          <input type="text" id="plataforma" placeholder="Enter plataform" />
+          <input type="text" id="red" placeholder="Enter social media" />
           <div class="column">
             <div class="select-box">
               <select>
-                <option hidden>Nationality</option>
+                <option id="nacionalidad" hidden>Nationality</option>
                 <option>American</option>
                 <option>Japanese</option>
                 <option>Mexican</option>
@@ -56,11 +56,11 @@
       <!--  <button id="send" onclick="guardar()">Enviar</button>--> 
     </section>
   </body>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="Configuracion.js"></script>
     <script src="obtener.js"></script>
 </html>

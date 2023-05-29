@@ -120,3 +120,20 @@ body {
     row-gap: 15px;
   }
 }
+
+a{
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: #4c87c6; /* Color del texto */
+  transition: color 0.3s ease; /* Animación suave para el cambio de color */
+
+  /* Agrega efecto de sombra suave al hacer hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+a:hover {
+  color: #ff7f50; /* Cambia el color del texto al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumenta el tamaño de la sombra */
+}

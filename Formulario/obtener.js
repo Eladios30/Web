@@ -28,7 +28,7 @@ function guardar() {
   if (validaciones(correo) == true) {
     var numero = document.getElementById("telefono").value
     var fecha = document.getElementById("fecha").value
-    var plataforma = document.getElementById("correo").value
+    var plataforma = document.getElementById("plataforma").value
     var red = document.getElementById("red").value
     var nacionalidad = document.getElementById("nacionalidad").value
     var comentarios = document.getElementById("comentarios").value
