@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -127,6 +127,22 @@
                         Provides A Full Month Of Professional Support In The C.A.T.I.</h3>
                         
                 </div>
+                <div id="donate-button-container">
+<div id="donate-button"></div>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'73YZ2TJJP943A',
+image: {
+src:'https://www.paypalobjects.com/en_US/MX/i/btn/btn_donateCC_LG.gif',
+alt:'Donate with PayPal button',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+</div>
+
             </section>
         </section>
     </main>
@@ -138,13 +154,13 @@
                     <p>amigoseducarte@gmail.com</p>
                 </div>
                 <div class="social-media">
-                    <a href="./" class="social-media-icon">
+                    <a href="https://www.facebook.com/FriendsofEducarte/" class="social-media-icon">
                         <i class='bx bxl-facebook'></i>
                     </a>
-                    <a href="./" class="social-media-icon">
+                    <a href="https://educarteaim.org" class="social-media-icon">
                         <i class='bx bxl-twitter' ></i>
                     </a>
-                    <a href="./" class="social-media-icon">
+                    <a href="https://educarteaim.org" class="social-media-icon">
                         <i class='bx bxl-instagram' ></i>
                     </a>
                 </div>
