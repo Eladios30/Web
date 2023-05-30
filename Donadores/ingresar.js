@@ -3,12 +3,13 @@ var i = 1;
 
 //Funcion
 function entrada() {
-    //Variables de tipo
-    var tipo = document.getElementById("tipo").value
-    var tipo2 = document.getElementById("tipo2").value
-    var tipo3 = document.getElementById("tipo3").value
-    var tipo4 = document.getElementById("tipo4").value
-    var tipo5 = document.getElementById("tipo5").value
+
+    //Variables seleccionadas
+    var tipo = document.getElementById("select").value
+    var tipo2 = document.getElementById("select2").value
+    var tipo3 = document.getElementById("select3").value
+    var tipo4 = document.getElementById("select4").value
+    var tipo5 = document.getElementById("select5").value
 
     //Declaramos variables de descripciones
     var descripcion = document.getElementById("descripcion").value
