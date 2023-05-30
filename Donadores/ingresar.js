@@ -26,16 +26,15 @@ function entrada() {
       //Agregamos directorio para los nodos
       db.ref("Entregas/" + i++).set({
         material : tipo,
-        material : tipo2,
-        material : tipo3,
-        material : tipo4,
-        material : tipo5,
-
         descripciones : descripcion,
-        descripciones : descripcion2,
-        descripciones : descripcion3,
-        descripciones : descripcion4,
-        descripciones : descripcion5
+        materiales2 : tipo2,
+        descripciones2 : descripcion2,
+        materiales3 : tipo3,
+        descripciones3 : descripcion3,
+        materiales4 : tipo4,
+        descripciones4 : descripcion4,
+        materiales5 : tipo5,
+        descripciones5 : descripcion5
       })
 
       Swal.fire({
