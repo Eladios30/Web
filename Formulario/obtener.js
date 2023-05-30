@@ -31,15 +31,6 @@ function guardar() {
       nacionalidad: nacionalidad,
       comentarios: comentarios
     })
-    
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'Your work has been saved',
-      showConfirmButton: false,
-      timer: 1500
-    })
-    
   } else {
 
 	//Mensaje de error
