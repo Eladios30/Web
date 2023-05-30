@@ -1,6 +1,7 @@
 
 //Contador para el ingreso de cada formulario
 var i = 1;
+
 function guardar() {
   //Declaramos variables
   var nombre = document.getElementById("nombre").value
@@ -31,6 +32,7 @@ function guardar() {
       nacionalidad: nacionalidad,
       comentarios: comentarios
     })
+
   } else {
 
 	//Mensaje de error
