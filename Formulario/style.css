@@ -23,19 +23,28 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.btn-1 {
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgba(96, 147, 241, 0.3);
-    border: 1px solid #AAB1FF;
-    margin: 35px 10px 0px 0px;
-    padding: 15px 25px;
-    color: #23036e;
-    border-radius: 25px;
+form .btn-1{
+  height: 45px;
+  margin: 10px 0;
 }
+form .btn-1{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  text-align: center;
 
-.btn-1:hover {
-    background-color: #AAB1FF;
+}
+form .btn-1:hover{
+  color: #fff;
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  
 }
 .container header {
   font-size: 1.5rem;
